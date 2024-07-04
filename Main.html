@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the website for Victor's profile">
+    <title>Victor Personal Portfolio Website - Mechanical Engineering</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <!--img src="images/logo.png" alt= "logo" class="logo"-->  <!--Top left logo right here-->
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <!--<li><a href="#services">Services</a></li> -->
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Mechanical Engineer</p>
+            <h1>Hi, I'm <span>Victor Ma</span><br>From Hong Kong</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <!--div class="about-col-1">
+                <img src="images/user.png">
+            </div-->
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>A passionate Mechanical Engineering student currently studying at Swansea University who has actively engaged in various projects to satiate curiosity and enhance skills ranging from building a race car to researching optimal bolt configurations for a universal TV mount. I am eager to grow as an engineer and am committed to delivering high-quality work. Looking forward to starting a career in the dynamic field of engineering while contributing to the success of the company.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Position')">Responsibility</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Position">
+                    <ul>
+                        <li><span><em>[2022 - 2023]</em> Powertrain Researcher (Formula Team of Swansea University)</span><br>Nominated to be part of the formula team required me to work with the team under stressful competition conditions. Building a race car also gave me insight to the practical side of engineering. To do extra research while dealing with the workload of engineering course helped me develop time management skills and be a more efficient learner.</li>
+                        <li><span><em>[2018 - 2019]</em> Academic Support (Hong Kong Baptist University Affiliated School)</span><br>As a teaching ambassador academic tutoring is the objective, our team consist of 4 are entrusted to mentor a classroom full of junior students during study periods after school. Coaching students help me become more understanding and kinder.</li>
+                        <li><span><em>[2017 - 2018]</em> Master Librarian (Hong Kong Baptist University Affiliated School)</span><br>Retaining order in the school library is a major responsibility as a librarian. We are also tasked with organising the books and cataloguing library resources for 4 hours a week, overseeing six other librarians in my team as the master librarian helped me become more critical in decision making and a more impactful communicator.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>Being part of the Formula Team of Swansea University. The intake manifold is optimized to make it more efficient</span><br>This research required extensive knowledge of fluid mechanics, engineering mechanics/analysis, calculus, 3D modelling and MATLAB coding. </li>
+                        <li><span>My dissertation for Mechanical engineering (BEng) is to reimagine the Tilt-Rotor Technology on Quadrotor Drones for Omnidirectional Stability</span><br>Basic understanding of Control System, Rotor-dynamics, Fluid-Mechanics, Robotics, Single-Variable Calculus and MATLAB is required.</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span><em>[2020-2024]</em> Swansea University - Mechanical Engineering (Beng)</span><br>2.1* Class average as of now</li>
+
+                        <li><span><em>[2014-2020]</em> Hong Kong Baptist University Affiliated School Wong Kam Fai Secondary School</span><br>A-levels: Maths(A), Chemistry(C), Physics(D)<br>IELTS (English as second language): Listening(9), Reading(8), Writing(7), Speaking(7) </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- 
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>-->
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>My dissertation</h3>
+                    <p>Tilt-Rotor Technology on Quadrotor Drones for Omnidirectional Stability</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Intake Manifold for Formula Student</h3>
+                    <p>Plenum Shape, Plenum Volume are Studied and Justified using Internal, External Flow, and Safety Factors</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Stress Analysis for Universal TV Mount</h3>
+                    <p>Tensile Test is done to investigate the Optimum Joint Configuration for a TV Mount</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <br>
+                <h2>email:</h2>
+                <p><i class="fas fa-paper-plane"></i> victor_ma@live.hk</p>
+                <br>
+                <h2>Phone Number:</h2>
+                <p><i class="fas fa-phone-square-alt"></i> +44 7477909393</p>
+                <p><i class="fas fa-phone-square-alt"></i> +852 52247064</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © <em>Victor Ma</em></p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>

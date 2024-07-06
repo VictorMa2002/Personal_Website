@@ -322,7 +322,7 @@ form .btn2{
     color: #ff004f;
     text-decoration: none;
 }
-.Website_ongoing{
+.website_ongoing{
     text-align: center;
 }
 /* -----------------css for small screens--------- */
@@ -386,11 +386,10 @@ nav .fas{
         flex-basis: 100%;
     }
     .copyright{
-        font-size: 14px;
-    }
-    .Website_ongoing{
-        text-align: center;
         font-size: 10px;
+    }
+    .website_ongoing{
+        font-size: 12px;
     }
 }
 #msg{
